@@ -48,7 +48,7 @@ public class num2try {
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#uploadPicture").uploadFromClasspath("images/eric.jpg");
+        $("#uploadPicture").uploadFromClasspath("src/test/images/eric.jpg");
         $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
