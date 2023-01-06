@@ -18,7 +18,7 @@ public class num2try {
         Configuration.baseUrl = "https://demoqa.com";
     }
     @Test
-    void studentRegistrationFormTest() {
+    void num2try() {
         String name = "Alexey";
         String lastName = "Martynov";
         String email = "leshaklew@gmail.com";
