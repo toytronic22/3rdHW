@@ -41,7 +41,7 @@ public class StudentRegistrationFormTest {
         $("#userNumber").setValue(phoneNumber);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("May");
-        $(".react-datepicker__year-select").selectOption("1987");
+        $(".react-datepicker__year-select").selectOption("1989");
         $(".react-datepicker__day--005:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
