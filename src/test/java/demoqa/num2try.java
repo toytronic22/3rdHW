@@ -44,7 +44,7 @@ public class num2try {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("May");
         $(".react-datepicker__year-select").selectOption("1989");
-        $(".react-datepicker__day--005:not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__day--018:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbiesWrapper").$(byText("Music")).click();
         $("#hobbiesWrapper").$(byText("Reading")).click();
