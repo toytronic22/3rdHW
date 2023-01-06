@@ -34,6 +34,8 @@ bin/
 out/
 logs/
 target/
+junit/
+locators/
 .classpath
 .project
 .settings/org.eclipse.buildship.core.prefs
