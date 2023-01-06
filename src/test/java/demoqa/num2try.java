@@ -27,8 +27,8 @@ public class num2try {
         String gender = "Male";
         String dateOfBirth = "18 May,1989";
         String subject = "Computer Science";
-        String hobbies = "Sports, Reading";
-        String pictureFIleName = "eric.jpg";
+        String hobbies = "Music, Reading";
+        String pictureFIleName = "eric.png";
         String stateAndCity = "NCR Delhi";
 
         open("/automation-practice-form");
@@ -46,9 +46,9 @@ public class num2try {
         $(".react-datepicker__year-select").selectOption("1989");
         $(".react-datepicker__day--005:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Computer Science").pressEnter();
-        $("#hobbiesWrapper").$(byText("Sports")).click();
+        $("#hobbiesWrapper").$(byText("Music")).click();
         $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#uploadPicture").uploadFromClasspath("src/test/images/eric.jpg");
+        $("#uploadPicture").uploadFromClasspath("images/eric.png");
         $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
