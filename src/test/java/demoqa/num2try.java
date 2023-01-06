@@ -1,3 +1,5 @@
+package demoqa;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -8,7 +10,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class StudentRegistrationFormTest {
+public class num2try {
 
     @BeforeAll
     static void beforeAll() {
@@ -25,9 +27,9 @@ public class StudentRegistrationFormTest {
         String gender = "Male";
         String dateOfBirth = "18 May,1989";
         String subject = "Computer Science";
-        String hobbies = "Music, Reading";
-        String pictureFIleName = "brad_pitt.png";
-        String stateAndCity = "NCR Noida";
+        String hobbies = "Sports, Reading";
+        String pictureFIleName = "eric.jpg";
+        String stateAndCity = "NCR Delhi";
 
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration form"));
@@ -46,12 +48,12 @@ public class StudentRegistrationFormTest {
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#hobbiesWrapper").$(byText("Reading")).click();
-        $("#uploadPicture").uploadFromClasspath("images/brad_pitt.png");
+        $("#uploadPicture").uploadFromClasspath("images/eric.jpg");
         $("#currentAddress").setValue(currentAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
         $("#city").click();
-        $("#stateCity-wrapper").$(byText("Noida")).click();
+        $("#stateCity-wrapper").$(byText("Delhi")).click();
         $("#submit").click();
 
         $(".modal-content").should(appear);
