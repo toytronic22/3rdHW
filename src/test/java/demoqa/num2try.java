@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class num2try {
+public class Num2Try {
 
     @BeforeAll
     static void beforeAll() {
@@ -18,7 +18,7 @@ public class num2try {
         Configuration.baseUrl = "https://demoqa.com";
     }
     @Test
-    void num2try() {
+    void Num2Try() {
         String name = "Alexey";
         String lastName = "Martynov";
         String email = "leshaklew@gmail.com";
