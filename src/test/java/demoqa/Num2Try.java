@@ -16,6 +16,7 @@ public class Num2Try {
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
+        Configuration.holdBrowserOpen = true;
     }
     @Test
     void Num2Try() {
